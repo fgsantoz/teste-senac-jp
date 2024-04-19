@@ -2,7 +2,6 @@
 para homens: (72.7*alt)-58
 para mulheres: (62.1*alt)-44.7 */
 
-
 #include <iostream>
 
 using namespace std;
