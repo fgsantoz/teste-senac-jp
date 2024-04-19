@@ -6,7 +6,7 @@ using namespace std;
 
 main() {
 	
-	system("chcp 65001");
+		system("chcp 65001");
 
 	
     

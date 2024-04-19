@@ -9,7 +9,7 @@ main() {
 
     system("chcp 65001");
     
-    int op;
+    int op, num;
     double cels, fahr;
     char gen;
 	float alt, imc;
@@ -79,7 +79,17 @@ main() {
 
             case 3: {
 
-                cout <<"Sendo criativo";
+                cout <<"Tabuada de Multiplicação: \n";
+
+                cout <<"\n Insira o número da tabuada: ";
+		        cin >>num; cout <<"\n";
+
+		        for (int i = 0; i <= 10; i++)	{
+
+				    cout <<num <<"*" <<i <<"=" <<num*i <<"\n\n";
+
+		        }
+
                 break;
 
             };

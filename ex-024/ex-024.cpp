@@ -6,18 +6,18 @@ using namespace std;
 
 main() {
 	
-	system("chcp 65001");
+		system("chcp 65001");
 
-	int num;
+		int num;
 
-	cout <<"\n Insira o número da tabuada: ";
-	cin >>num; cout <<"\n";
+		cout <<"\n Insira o número da tabuada: ";
+		cin >>num; cout <<"\n";
 
-	for (int i = 0; i <= 10; i++)	{
+		for (int i = 0; i <= 10; i++)	{
 
-		cout <<num <<"*" <<i <<"=" <<num*i <<"\n\n";
+				cout <<num <<"*" <<i <<"=" <<num*i <<"\n\n";
 
-	}
+		}
      	    
 }
 
