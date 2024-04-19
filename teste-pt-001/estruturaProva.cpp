@@ -7,17 +7,17 @@ using namespace std;
 
 main() {
 
-    system("chcp 65001");
+	system("chcp 65001");
     
-    int op, num;
-    double cels, fahr;
-    char gen;
+	int op, num;
+	double cels, fahr;
+	char gen;
 	float alt, imc;
-    // float pes;  
+	// float pes;  
     
     do{
 
-        cout <<"\n \t Selecione uma opção no menu abaixo: \n";
+        cout <<"\n Selecione uma opção no menu abaixo: \n";
         cout <<"\n [1] Exercício 04";
         cout <<"\n [2] Exercício 10";
         cout <<"\n [3] Exercício 17";
@@ -26,20 +26,20 @@ main() {
         cout <<"\n [6] Use a sua criatividade";
         cout <<"\n [7] Encerrar \n\n";
         cout <<"\n Digite a opção: ";
-        cin >>op;
+        cin >>op; cout <<"\n";
 
         switch(op) {
 
             case 1: {
                 
-                cout <<"\n Conversor de Temperatura: \n";
+                cout <<"\n \t Conversor de Temperatura: \n";
                 
-                cout <<"\n Digite a temperatura em Celsius: ";
+                cout <<"\n \t Digite a temperatura em Celsius: ";
     			cin >> cels;
     
     			fahr = (9*cels+160)/5;
     
-   				cout <<"\n A temperatura em Fafrenheit é " <<fahr <<"ºF\n";                            
+   				cout <<"\n \t A temperatura em Fafrenheit é " <<fahr <<"ºF\n";                            
                                 
                 break;
 
@@ -47,29 +47,29 @@ main() {
 
             case 2: {
                 
-                cout <<"Calculadora de IMC: \n";
+                cout <<"\n \t Calculadora de IMC: \n";
 
-                cout <<"\n Informe seu gênero... \n\n (M: para masculino | F: para feminino): ";
+                cout <<"\n \t Informe seu gênero... \n\n \t M: para masculino | F: para feminino: ";
                 cin >>gen;
         
-                // cout <<"\n Informe seu peso (em quilogramas): ";
+                // cout <<"\n \t Informe seu peso (em quilogramas): ";
                 // cin >>pes; 
                 // devido a formula dada no enunciado, a solicitação de peso, por hora, se tornou dispensável e, portanto, foi desativada do código;
     
-                cout <<"\n Informe sua altura (em metros): ";
+                cout <<"\n \t Informe sua altura (em metros): ";
                 cin >>alt;    
     
                 if(gen == 'M' || gen == 'm') {
             
                     imc = (72.7*alt)-58;
-                    cout <<"\n Seu IMC é " <<imc <<"\n\n";
+                    cout <<"\n \t Seu IMC é " <<imc <<"\n\n";
 
                 }
     	
                 else if(gen == 'F' || gen == 'f') {
             
                     imc = (62.1*alt)-44.7;
-                    cout <<"\n Seu IMC é " <<imc <<"\n\n";
+                    cout <<"\n \t Seu IMC é " <<imc <<"\n\n";
 
                 }
 
@@ -79,16 +79,9 @@ main() {
 
             case 3: {
 
-                cout <<"Tabuada de Multiplicação: \n";
+                cout <<"\n \t Exercício 17: \n";
 
-                cout <<"\n Insira o número da tabuada: ";
-		        cin >>num; cout <<"\n";
-
-		        for (int i = 0; i <= 10; i++)	{
-
-				    cout <<num <<"*" <<i <<"=" <<num*i <<"\n\n";
-
-		        }
+                
 
                 break;
 
@@ -96,14 +89,25 @@ main() {
 
             case 4: {
 
-                cout <<"Sendo criativo";
+                cout <<"\n \t Tabuada de Multiplicação: \n";
+
+                cout <<"\n \t Insira o número da tabuada: ";
+		        cin >>num; cout <<"\n";
+
+		        for (int i = 0; i <= 10; i++)	{
+
+					cout <<"\n \t" <<num <<"*" <<i <<"=" <<num*i <<"\n\n";
+
+		        }
+                
+                
                 break;
 
             };
 
             case 5: {
 
-                cout <<"Sendo criativo";
+                cout <<"Exercício 28: ";
                 break;
 
             };
