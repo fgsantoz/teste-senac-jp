@@ -9,7 +9,8 @@ main() {
 
 	system("chcp 65001");
     
-	int op, num;
+    const int arytmn = 10;	  
+	int op, num, vlr[arytmn], ctmnos = 0;
 	double cels, fahr;
 	char gen;
 	float alt, imc, nota01, nota02, nota03, media, peso01 = 2, peso02 = 3, peso03 = 5;
@@ -40,7 +41,7 @@ main() {
     
     			fahr = (9*cels+160)/5;
     
-   				cout <<"\n \t A temperatura em Fafrenheit é " <<fahr <<"ºF\n";                            
+   				cout <<"\n \t A temperatura em Fafrenheit é " <<fahr <<"ºF! \n";                            
                                 
                 break;
 
@@ -63,14 +64,14 @@ main() {
                 if(gen == 'M' || gen == 'm') {
             
                     imc = (72.7*alt)-58;
-                    cout <<"\n \t Seu IMC é " <<imc <<"\n\n";
+                    cout <<"\n \t Seu IMC é " <<imc <<"! \n\n";
 
                 }
     	
                 else if(gen == 'F' || gen == 'f') {
             
                     imc = (62.1*alt)-44.7;
-                    cout <<"\n \t Seu IMC é " <<imc <<"\n\n";
+                    cout <<"\n \t Seu IMC é " <<imc <<"! \n\n";
 
                 }
 
@@ -80,7 +81,7 @@ main() {
 
             case 3: {
 
-                cout <<"\n \t Exercício 17: \n";
+                cout <<"\n \t Cálculo de Média: \n";
                 
                 cout <<"\n \t Insira a 1ª nota: ";
 				cin >>nota01;
@@ -112,14 +113,31 @@ main() {
 
 		        }
                 
-                
                 break;
 
             };
 
             case 5: {
 
-                cout <<"Exercício 28: ";
+                cout <<"Contador Negativo: ";
+                
+                cout <<"\n \t Informe os números... \n";
+	
+				for (int i = 0; i < arytmn; ++i) {
+		
+					cout <<"\n \t\t Número " <<i + 1 <<": ";
+					cin >>vlr[i];
+		
+					if(vlr[i] < 0) {
+			
+						ctmnos++;
+			
+					}
+								
+				}
+	
+				cout <<"\n \t O total de valores negativos é " <<ctmnos <<"! \n\n";       
+                        
                 break;
 
             };
@@ -127,6 +145,9 @@ main() {
             case 6: {
 
                 cout <<"Sendo criativo";
+                
+                
+                
                 break;
 
             };
