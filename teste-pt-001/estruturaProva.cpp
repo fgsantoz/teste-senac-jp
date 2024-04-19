@@ -12,8 +12,9 @@ main() {
 	int op, num;
 	double cels, fahr;
 	char gen;
-	float alt, imc;
-	// float pes;  
+	float alt, imc, nota01, nota02, nota03, media, peso01 = 2, peso02 = 3, peso03 = 5;
+	// float pes;
+	 
     
     do{
 
@@ -80,11 +81,22 @@ main() {
             case 3: {
 
                 cout <<"\n \t Exercício 17: \n";
-
                 
+                cout <<"\n \t Insira a 1ª nota: ";
+				cin >>nota01;
+	
+				cout <<"\n \t Insira a 2ª nota: ";
+				cin >>nota02;
+	
+				cout <<"\n \t Insira a 3ª nota: ";
+				cin >>nota03;
+	
+				media = (nota01*peso01 + nota02*peso02 + nota03*peso03) / (peso01+peso02+peso03);
+	
+				cout <<"\n \t A média final do aluno é " <<media <<"! \n\n";                
 
                 break;
-
+                
             };
 
             case 4: {
