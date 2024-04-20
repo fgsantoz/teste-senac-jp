@@ -9,7 +9,7 @@ main() {
 
 	system("chcp 65001");
     
-    const int arytmn = 10;	  
+    const int arytmn = 10, MAX = 6;	  
 	int op, num, vlr[arytmn], ctmnos = 0;
 	double cels, fahr;
 	char gen;
@@ -25,7 +25,7 @@ main() {
         cout <<"\n [3] Exercício 17";
         cout <<"\n [4] Exercício 24";
         cout <<"\n [5] Exercício 28";
-        cout <<"\n [6] Use a sua criatividade";
+        cout <<"\n [6] Avaliação Pt.02";
         cout <<"\n [7] Encerrar \n\n";
         cout <<"\n Digite a opção: ";
         cin >>op; cout <<"\n";
@@ -144,10 +144,27 @@ main() {
 
             case 6: {
 
-                cout <<"Sendo criativo";
+                cout <<"\n \t Sexta Questão - Avaliação Pt.02: \n";
                 
-                
-                
+                for(int i = 0; i <= MAX; ++i) {
+                	
+        			int padrao[] = {i+1, i+2, i+1};
+            		int count = sizeof(padrao) / sizeof(padrao[0]);
+                	
+            		for(int j = 0; j < count; ++j ) {
+                			
+               			for(int p = 0; p < padrao[j]; p++) {
+                				
+                			std::cout <<"*";
+                				
+						}
+						
+						std::cout << std::endl;
+                			
+					}
+					
+				}
+				
                 break;
 
             };
